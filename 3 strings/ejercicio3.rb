@@ -6,3 +6,11 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+c = a + b
+print "#{c}\n"
+d = a | b
+print "#{d}\n"
+e = a & b
+print "#{e}\n"
+f = a.zip(b).flatten # intercala los elementos y con flatten se vuelven un array
+print "#{f}\n"

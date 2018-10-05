@@ -9,4 +9,14 @@
 # 5. Utilizando un arreglo vacío auxiliar y operaciones de push y pop:
 #    invertir el orden de los elementos en un arreglo.
 
-a = [1,2,3,9,1,4,5,2,3,6,6]
+a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+a.pop # Elimina el último elemento
+print "#{a}\n"
+a.shift # Elimina el primer elemento
+print "#{a}\n"
+a.delete_at(4) # Elimina el elemento del medio, en este caso en la posición 4
+print "#{a}\n"
+a.pop while a.last != 1 # Elimina el último elemento mientras sea distinto a 1
+print "#{a}\n"
+a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+print a.reverse
